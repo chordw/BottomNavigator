@@ -1,7 +1,7 @@
 # BottomNavigator
 
 #### 介绍
-一个 HarmonyOS JS 框架下，底部导航栏的一种实现方式。
+一个 HarmonyOS JS 框架下，底部导航栏的一种实现方式。欢迎指正！
 
 #### 软件架构
 软件架构说明
