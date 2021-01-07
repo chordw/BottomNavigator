@@ -26,7 +26,7 @@ export default {
 
         this.change2Tab(); //切换按钮
     },
-    change2Page(data) {
+    change2Page() {
         console.info("change2Page:" + this.currentPageIndex);
 
         this.$element('pageSwiper').swipeTo({
