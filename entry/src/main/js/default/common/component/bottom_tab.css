@@ -1,0 +1,25 @@
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 0px;
+    flex-grow: 1;
+    height: 100%;
+}
+.text-style-selected {
+    font-size: 11px;
+    color: #0081ff;
+}
+
+.text-style-normal {
+    font-size: 11px;
+    color: black;
+}
+
+
+.icon-style{
+    object-fit: scale-down;
+    width: 25px;
+    height: 25px;
+}

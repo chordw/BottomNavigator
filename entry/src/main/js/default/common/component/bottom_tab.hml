@@ -1,0 +1,10 @@
+<div class="item">
+    <div class="item" onclick="childClicked">
+        <image if="{{pSelected}}" src="{{iconSelected}}" class="icon-style"></image>
+        <image else src="{{iconNormal}}" class="icon-style"></image>
+        <text if="{{pSelected}}" class="text-style-selected">{{title}}
+        </text>
+        <text else class="text-style-normal">{{title}}
+        </text>
+    </div>
+</div>

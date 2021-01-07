@@ -1,0 +1,48 @@
+<element name='bottomTab' src='../../common/component/bottom_tab.hml'></element>
+<div class="containerRoot">
+    <div class="containerTop">
+        <swiper id="pageSwiper" index="{{currentPageIndex}}" loop="false" indicator="false" autoplay="false"
+                duration="0" onchange="onPageChange">
+            <div style="background-color: coral;flex: 1;">
+                <text>
+                    页面1
+                </text>
+            </div>
+            <div style="background-color: aqua;flex: 1;">
+                <text>
+                    页面2
+                </text>
+            </div>
+            <div style="background-color: deepskyblue;flex: 1;">
+                <text>
+                    页面3
+                </text>
+            </div>
+            <div style="background-color: peru;flex: 1;">
+                <text>
+                    页面4
+                </text>
+            </div>
+            <div style="background-color: mediumpurple;flex: 1;">
+                <text>
+                    页面5
+                </text>
+            </div>
+        </swiper>
+    </div>
+
+    <!--<editor-fold desc="底部导航栏">-->
+    <div class="containerBottom">
+        <bottomtab @on-child-click="onTabSelected" index="0" p-selected="{{tab0selected}}" title="页面1"
+                icon-selected="/common/tab_0_selected.png" icon-normal="/common/tab_0_normal.png"></bottomtab>
+        <bottomtab @on-child-click="onTabSelected" index="1" p-selected="{{tab1selected}}" title="页面2"
+                icon-selected="/common/tab_0_selected.png" icon-normal="/common/tab_0_normal.png"></bottomtab>
+        <bottomtab @on-child-click="onTabSelected" index="2" p-selected="{{tab2selected}}" title="页面3"
+                icon-selected="/common/tab_0_selected.png" icon-normal="/common/tab_0_normal.png"></bottomtab>
+        <bottomtab @on-child-click="onTabSelected" index="3" p-selected="{{tab3selected}}" title="页面4"
+                icon-selected="/common/tab_0_selected.png" icon-normal="/common/tab_0_normal.png"></bottomtab>
+        <bottomtab @on-child-click="onTabSelected" index="4" p-selected="{{tab4selected}}" title="页面5"
+                icon-selected="/common/tab_0_selected.png" icon-normal="/common/tab_0_normal.png"></bottomtab>
+    </div>
+    <!--</editor-fold desc="底部导航栏">-->
+</div>

@@ -1,0 +1,86 @@
+.containerRoot {
+    display: flex;/**/
+    flex-direction: column;/*flex-direction:flex容器主轴方向,默认row。可选项有：column：垂直方向从上到下；row：水平方向从左到右*/
+    flex-wrap: nowrap;/*flex容器是单行还是多行显示，该值暂不支持动态修改。可选项有：nowrap：不换行，单行显示；wrap：换行，多行显示。*/
+    justify-content: flex-start;/*flex容器当前行的主轴对齐格式。可选项有：flex-start：项目位于容器的开头。flex-end：项目位于容器的结尾。
+    center：项目位于容器的中心。space-between：项目位于各行之间留有空白的容器内。space-around：项目位于各行之前、之间、之后都留有空白的容器内。*/
+    width: 100%;
+    height: 100%;
+}
+
+/*顶部导航栏*/
+.containerTitleBar {
+    width: 100%;
+    height: 44px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+.containerTitleBarBack {
+    width: 44px;
+    height: 100%;
+    padding: 10px 16px;
+    object-fit: contain;
+    position: absolute;
+    left: 0px;
+}
+.containerTitleBarTitle {
+    height: 44px;
+    width: 100%;
+    text-color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border: 0px;
+    text-align: center;
+}
+.containerTitleBarRight {
+    height: 44px;
+    text-color: black;
+    font-size: 16px;
+    text-align: center;
+    position: absolute;
+    border: 0px;
+    right: 0px;
+    padding: 0px 16px;
+}
+.containerTitleBarRightMenu {
+    border-radius: 5px;
+    background-color: lightgray;;
+}
+
+/*页面区域*/
+.containerTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    flex: 1;
+}
+/*底部导航栏*/
+.containerBottom {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px lightgray;
+}
+
+/*退出框*/
+.dialog-main {
+    width: 100%;
+    margin: 0px 30px 20px 30px;
+    border-radius: 10px;
+    border-style: solid;
+}
+
+.dialog-contain{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
