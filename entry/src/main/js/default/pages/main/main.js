@@ -35,42 +35,15 @@ export default {
     },
     change2Tab() {
         console.info("change2Tab:" + this.currentPageIndex);
-        switch (this.currentPageIndex) {
-            case 0:
-            this.tab0selected = true;
-            this.tab1selected = false;
-            this.tab2selected = false;
-            this.tab3selected = false;
-            this.tab4selected = false;
-            break;
-            case 1:
-            this.tab0selected = false;
-            this.tab1selected = true;
-            this.tab2selected = false;
-            this.tab3selected = false;
-            this.tab4selected = false;
-            break;
-            case 2:
-            this.tab0selected = false;
-            this.tab1selected = false;
-            this.tab2selected = true;
-            this.tab3selected = false;
-            this.tab4selected = false;
-            break;
-            case 3:
-            this.tab0selected = false;
-            this.tab1selected = false;
-            this.tab2selected = false;
-            this.tab3selected = true;
-            this.tab4selected = false;
-            break;
-            case 4:
-            this.tab0selected = false;
-            this.tab1selected = false;
-            this.tab2selected = false;
-            this.tab3selected = false;
-            this.tab4selected = true;
-            break;
+        for (var i = 0; i < 5; i++) {
+            var param = "tab" + i + "selected";
+            if (this.currentPageIndex == i) {
+                //选中位置
+                this[param] = true;
+            } else {
+                //非选中位置
+                this[param] = false;
+            }
         }
     }
 }
